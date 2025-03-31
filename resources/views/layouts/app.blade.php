@@ -46,8 +46,7 @@
                 <li>
                     <a href="{{ route('home') }}"
                         class="inline-flex flex-col items-center justify-center p-2.5 bg-[#0000001a] backdrop-blur-[5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(5px)_brightness(100%)]">
-                        <img class="w-[52.58px] h-[43.75px]" alt="Museum logo"
-                            src="https://c.animaapp.com/m8peu9m38cRc1i/img/group-497.png">
+                        
                         <div
                             class="font-baskervville font-normal text-white text-xs text-center tracking-[0] leading-[normal]">
                             MUSEUM</div>
@@ -109,31 +108,8 @@
                                         {{ __('Đăng xuất') }}
                                     </button>
                                 </li>
-
-                                <li>
-                                    <a href="{{ route('client.exhibition.ticket.history') }}"
-                                        class="block text-left w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                        type="button">
-                                        {{ __('Lịch sử đặt vé') }}
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="{{ route('order.history') }}"
-                                        class="block text-left w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                        type="button">
-                                        {{ __('Lịch sử đặt hàng') }}
-                                    </a>
-                                </li>
-
                                 @if (Auth::user()->is_admin)
-                                    <li>
-                                        <a href="{{ route('admin.post') }}" role="menuitem"
-                                            class="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                            type="button">
-                                            {{ __('Quản trị website') }}
-                                        </a>
-                                    </li>
+                                 
                                 @endif
                             </ul>
                         </div>
@@ -149,111 +125,15 @@
             <div>
                 <div
                     class="inline-flex flex-col items-center justify-center bg-[#0000001a] backdrop-blur-[5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(5px)_brightness(100%)]">
-                    <img class="" alt="Museum logo"
-                        src="https://c.animaapp.com/m8peu9m38cRc1i/img/group-497-1.png">
-                    <div
-                        class="w-fit font-baskervville font-normal text-white text-xs text-center tracking-[0] leading-[normal]">
-                        MUSEUM
-                    </div>
+                    
+                    
                 </div>
 
-                <!-- Footer Links -->
-                <div class="mt-12 grid grid-cols-2 gap-12">
-                    <div class="w-fit font-baskervville font-normal text-white text-xs tracking-[0] leading-[normal]">
-                    TRANG CHỦ</div>
-                    <div class="w-fit font-baskervville font-normal text-white text-xs tracking-[0] leading-[normal]">
-                    SỰ KIỆN</div>
-                    <div class="w-fit font-baskervville font-normal text-white text-xs tracking-[0] leading-[normal]">
-                    PHÒNG TRƯNG BÀY</div>
-                    <div class="w-fit  font-baskervville font-normal text-white text-xs tracking-[0] leading-[normal]">
-                    CẬP NHẬT</div>
-                    <div class="w-fit  font-baskervville font-normal text-white text-xs tracking-[0] leading-[normal]">
-                    LỊCH SỬ</div>
-                    <div class="w-fit  font-baskervville font-normal text-white text-xs tracking-[0] leading-[normal]">
-                    LIÊN HỆ</div>
-                </div>
-            </div>
+                
 
-            <div>
-                <div class="font-baskervville font-normal text-white text-[30.2px] tracking-[0] leading-[normal]">
-                BẢN TIN
-                </div>
-
-                <div class="font-poppins font-light text-white text-[11.6px] tracking-[0] leading-[normal] mt-2">
-                NHẬN TIN CẬP NHẬT HÀNG NGÀY VỀ SỰ KIỆN, SẢN PHẨM VÀ NHIỀU THÔNG TIN KHÁC
-                </div>
-
-                <div>
-                    <div class="my-12">
-                        <div class="h-[60px] border border-solid border-white">
-                            <input class="w-full h-full bg-transparent border-none text-white px-4"
-                                placeholder="ENTER YOUR EMAIL">
-                        </div>
-
-                        <button
-                            class="bg-[#272727] border border-solid border-white rounded-none px-20 py-4 mt-2 cursor-pointer">
-                            <span
-                                class="font-baskervville font-normal text-white text-[11.6px] tracking-[0] leading-[normal]">
-                                ĐẶT MUA
-                            </span>
-                        </button>
-                    </div>
-
-                    <div class="space-y-4">
-                        <div class="font-poppins font-light text-white text-[11.6px] tracking-[0] leading-[normal]">
-                        LIÊN HỆ VỚI CHÚNG TÔI
-                        </div>
+        
 
 
-                        <div class="flex gap-4 items-center">
-                            <img class="w-6 h-6" alt="Email icon"
-                                src="https://c.animaapp.com/m8peu9m38cRc1i/img/frame-1.svg">
-
-                            <div
-                                class="font-poppins font-light text-white text-[11.6px] tracking-[0] leading-[normal]">
-                                leminhtien020202@gmail.com
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4 items-center">
-
-                            <img class="w-6 h-6" alt="Location icon"
-                                src="https://c.animaapp.com/m8peu9m38cRc1i/img/frame-5.svg">
-
-                            <div
-                                class="font-poppins font-light text-white text-[11.6px] tracking-[0] leading-[normal]">
-                                Ninh Kiều Cần Thơ
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Copyright Section -->
-        <section class="flex flex-col items-center text-center mt-12 py-8">
-            <div>
-                <div class="">
-                    <div class="flex flex-col items-center">
-                        <div class="font-poppins font-light text-white text-[11.6px] tracking-[0] leading-[normal]">
-                        Thiết kế và phát triển bởi Lê Minh Tiến
-                        </div>
-                        <img class="w-[54px] h-[54px] object-cover" alt="UXM logo"
-                            src="https://c.animaapp.com/m8peu9m38cRc1i/img/fav-icon-1.png">
-                    </div>
-
-                    <div class="font-poppins font-light text-white text-[11.6px] tracking-[0] leading-[normal]">
-                    miễn phí sử dụng cho mục đích thương mại và cá nhân. nếu bạn cần phát triển trang web và ứng 
-                    dụng amazon hãy kết nối với id email ở trên
-                    </div>
-                </div>
-
-                <div class="font-poppins font-light text-white text-[11.6px] tracking-[0] leading-[normal] mt-4">
-                nếu bạn đang sử dụng nó xin vui lòng cho chúng tôi một số thông tin
-                </div>
-            </div>
-        </section>
-    </div>
 
     <div id="popup-modal-logout" tabindex="-1"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[60] bg-gray-200/50 backdrop-blur-sm justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">

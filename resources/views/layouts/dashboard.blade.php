@@ -106,11 +106,7 @@
             'name' => 'Quản lý vé',
             'icon' => 'ticket',
         ],
-        [
-            'route' => 'admin.order',
-            'name' => 'Đơn hàng',
-            'icon' => 'order',
-        ],
+        
         [
             'route' => 'admin.user',
             'name' => 'Người dùng',
